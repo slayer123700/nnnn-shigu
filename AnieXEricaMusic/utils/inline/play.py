@@ -1,3 +1,4 @@
+
 import math
 import random
 from pyrogram.types import InlineKeyboardButton
@@ -34,40 +35,46 @@ def stream_markup_timer(_, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     umm = math.floor(percentage)
     if 0 < umm <= 10:
-        bar = "❖━━━━━━━━"
+        ba = "▰▱▱▱▱▱▱▱▱"
     elif 10 < umm < 20:
-        bar = "━❖━━━━━━━"
+        ba = "▰▰▱▱▱▱▱▱▱"
     elif 20 <= umm < 30:
-        bar = "━━❖━━━━━━"
+        ba = "▰▰▰▱▱▱▱▱▱"
     elif 30 <= umm < 40:
-        bar = "━━━❖━━━━━"
+        ba = "▰▰▰▰▱▱▱▱▱"
     elif 40 <= umm < 50:
-        bar = "━━━━❖━━━━"
+        ba = "▰▰▰▰▰▱▱▱▱"
     elif 50 <= umm < 60:
-        bar = "━━━━━❖━━━"
+        ba = "▰▰▰▰▰▰▱▱▱"
     elif 60 <= umm < 70:
-        bar = "━━━━━━❖━━"
+        ba = "▰▰▰▰▰▰▰▱▱"
     elif 70 <= umm < 80:
-        bar = "━━━━━━━❖━━"
+        ba = "▰▰▰▰▰▰▰▰▱"
     elif 80 <= umm < 95:
-        bar = "━━━━━━━━❖━"
+        ba = "▰▰▰▰▰▰▰▰▰"
     else:
-        bar = "━━━━━━━━━❖"
+        ba = "▰▰▰▰▰▰▰▰▰▰"
 
     buttons = [
         [
-            InlineKeyboardButton(text="ʀᴇsᴜᴍᴇ",callback_data=f"ADMIN Resume|{chat_id}"),
-            InlineKeyboardButton(text="ᴘᴀᴜsᴇ",callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="sᴋɪᴘ",callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="sᴛᴏᴘ",callback_data=f"ADMIN Stop|{chat_id}"),
-        ],
-        [
             InlineKeyboardButton(
-                text=f"{played} {bar} {dur}",
+                text=f"{played} {ba} {dur}",
                 callback_data="GetTimer",
             )
         ],
-        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
+        [
+            InlineKeyboardButton(text="ʀᴇꜱᴜᴍᴇ", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton("𝚈𝚝 𝙰𝚙𝚒", callback_data="bot_info_data"),
+            InlineKeyboardButton(text="ᴘᴀᴜꜱᴇ", callback_data=f"ADMIN Pause|{chat_id}"),
+        ],
+        [
+            InlineKeyboardButton(text="ꜱᴋɪᴘ", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="ꜱᴛᴏᴘ", callback_data=f"ADMIN Stop|{chat_id}"),
+            InlineKeyboardButton(text="ᴇɴᴅ 🍁", callback_data=f"ADMIN Stop|{chat_id}"),
+        ],
+        [
+            InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close"),
+        ],
     ]
     return buttons
 
@@ -75,12 +82,18 @@ def stream_markup_timer(_, chat_id, played, dur):
 def stream_markup(_, chat_id):
     buttons = [
         [
-            InlineKeyboardButton(text="ʀᴇsᴜᴍᴇ",callback_data=f"ADMIN Resume|{chat_id}"),
-            InlineKeyboardButton(text="ᴘᴀᴜsᴇ",callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="sᴋɪᴘ",callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="sᴛᴏᴘ",callback_data=f"ADMIN Stop|{chat_id}"),
+         InlineKeyboardButton(text=_["S_B_3"], url=f"https://t.me/{app.username}?startgroup=true",)
         ],
-        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
+        [
+            InlineKeyboardButton(text="ʀᴇꜱᴜᴍᴇ", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="ᴘᴀᴜꜱᴇ", callback_data=f"ADMIN Pause|{chat_id}"),
+        ],
+        [
+            InlineKeyboardButton(text="ꜱᴋɪᴘ", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="ꜱᴛᴏᴘ", callback_data=f"ADMIN Stop|{chat_id}"),
+        ],
+        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close"),
+        ],
     ]
     return buttons
 
