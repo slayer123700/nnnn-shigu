@@ -52,7 +52,7 @@
     },
     "STRING_SESSION": {
       "description": "A Pyrogram String Session from @Sessoin_String_gen_BOT on Telegram.",
-      "value": "AQFy0zIAeTrqXAyN24IN6WCSafrxbO81MFls0ObprFIFNDUixJJjgGITAdkghmp2aiWnhMnY-VbLFph-jaMKIEfsw7shXYiB6-qZOVlV0LKm3Imfd8GZ-AWzmj7O_v1VfcwtM8NeLkeJlGbaix6JpQeP_1ZefphDuxdCzrqzEOmaGeWvPj1cs9sjzYgTyAoehubC5XnbVuRU-7Xu6kmPssSQMYMABAZB35EGu47c-RAvyx43MkLKXzBQGKfU2Lx-YElS1U6jCwBTn4z6LYcct7ZT78CT7G-XK-P3PyLylYcGR0j90lGIzud7mJZm8ZNIHc-5NTlG-mxmK3l0MHjNMgW6bM_a9AAAAAGxDHVkAA",
+      "value": "AQFg7-QAwil119ar-VoFbOPeo00bVQH-WUqCmdm0WtKc69e836LS5l9kB378OXamwgt5mLuFs5864wZvJdtvJJu9ctkOxCp8Vzdvxa5cJzBk4ZyTn3JOPhxn8bXJbHnBZSB8fU_9FhqW6_RTbcUtmHsYsQ_9LZHucwNCxLauOALXaXnKucYeh9wBkIKC4MjYJx9OOYUgq5FVxoYBN9sQ9U30ygi8bve-F0sDxyege_R9aTQ0-ZtHK1GwSh-k9NUiwWPO2YIpE-ozZqUElnV7BwafQBgAbrk_iMSQuijYHK_bkNrV_q4aZR5d565xSUul6laE-jmauBADNEPl36WW7-bm7heYnAAAAAG86FB-AA",
       "required": true
     },
     "HEROKU_API_KEY": {
