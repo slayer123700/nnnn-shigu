@@ -56,10 +56,12 @@ async def play_commnd(
 if channel:
     mystic = await message.reply_text(_["play_2"].format(channel))
 else:
-    if isinstance(_["play_1"], dict) and "sticker" in _["play_1"]:
-        mystic = await message.reply_cached_media(file_id=_["play_1"]["sticker"])
+    play_1 = _["play_1"]
+    if isinstance(play_1, dict) and "sticker" in play_1:
+        mystic = await message.reply_cached_media(file_id=play_1["sticker"])
     else:
-        mystic = await message.reply_text(_["play_1"])
+        mystic = await message.reply_text(play_1)
+
 
     )
     plist_id = None
