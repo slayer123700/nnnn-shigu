@@ -55,7 +55,7 @@ async def play_commnd(
     fplay,
 ):
     # 🎵 Reply with a sticker on song request
-    await message.reply_sticker("CAACAgUAAyEFAASOlzVAAAEBZBhoXNqvZ-MQo8gQCaZbtac9AiJD-wACFQMAAnZPeFee-6uLME0avB4E")
+    await message.reply_sticker("CAACAgUAAyEFAASOlzVAAAEBZspoX-cpU1limObiE0NnKZ936EfB3wACxggAAtL9OVfNmn5c5Qtt7B4E")
 
     mystic = await message.reply_text(
         _["play_2"].format(channel) if channel else _["play_1"]
