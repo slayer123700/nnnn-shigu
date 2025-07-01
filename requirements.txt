@@ -29,6 +29,6 @@ uvloop
 yt-dlp
 youtube-search
 youtube-search-python
-pyromod
+pyrogram==2.0.106
 wget
 blackpink
