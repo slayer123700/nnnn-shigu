@@ -30,3 +30,4 @@ httpx[http2]==0.27.2
 bs4
 wget
 blackpink
+flask
